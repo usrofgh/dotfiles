@@ -16,6 +16,14 @@ unzip awscliv2.zip
 sudo ./aws/install
 rm awscliv2.zip
 
+
+##############   NVIM ##########################
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim-linux-x86_64
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
+echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.bashrc
+
 ###############  KEEPASSXC #####################
 sudo add-apt-repository -y ppa:phoerious/keepassxc && sudo apt update && sudo apt install -y keepassxc
 ###############  UV #####################
