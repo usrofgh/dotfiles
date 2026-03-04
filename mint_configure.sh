@@ -4,6 +4,10 @@ sudo sed -i '/cdrom:/s/^/#/' /etc/apt/sources.list
 
 rm -rf ~/Templates ~/Music ~/Pictures ~/Videos ~/Public
 
+echo "stty intr ^G" >> ~/.bashrc
+source ~/.bashrc
+
+
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install dconf-editor -y
