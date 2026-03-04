@@ -2,4 +2,4 @@ sudo apt install rclone inotify-tools
 mkdir -p ~/Gdrive
 rclone config
 I must to take client_id & secret_key. Create Oauth -> https://console.cloud.google.com/auth/clients?project
-rclone mount gdrive: ~/Gdrive --vfs-cache-mode full
+rclone mount gdrive: ~/Gdrive --vfs-cache-mode fullrclone mount gdrive: ~/Gdrive --vfs-cache-mode full --daemon
